@@ -1,4 +1,4 @@
-import { Code2, Cpu, Database, Network, type LucideIcon } from 'lucide-react';
+import { Code2, Cpu, Database, Wifi, type LucideIcon } from 'lucide-react';
 
 import imgCris from '../assets/cris.png';
 import imgDelucca from '../assets/delucca.png';
@@ -14,13 +14,14 @@ export type Member = {
   theme: 'blue' | 'orange' | 'navy' | 'light' | 'pale';
 };
 
+// Ordem de exibição (esquerda para direita)
 export const members: Member[] = [
   {
-    name: 'Bruno De Lucca',
-    role: 'Arquiteto de IOT',
-    image: imgDelucca,
-    instagram: 'https://www.instagram.com/bru_dlucca/',
-    theme: 'blue',
+    name: 'Marcelo',
+    role: 'Desenvolvedor Frontend',
+    image: imgMarcelo,
+    instagram: 'https://www.instagram.com/sla_marcello/',
+    theme: 'orange',
   },
   {
     name: 'Cristhian',
@@ -29,12 +30,12 @@ export const members: Member[] = [
     instagram: 'https://www.instagram.com/cris.hatz/',
     theme: 'orange',
   },
-    {
-    name: 'Marcelo',
-    role: 'Desenvolvedor Frontend',
-    image: imgMarcelo,
-    instagram: 'https://www.instagram.com/sla_marcello/',
-    theme: 'orange',
+  {
+    name: 'Paulo Seiji',
+    role: 'Administrador de Database',
+    image: imgPaulo,
+    instagram: 'https://www.instagram.com/psyjunior1/',
+    theme: 'blue',
   },
   {
     name: 'Joao Paulo',
@@ -44,10 +45,10 @@ export const members: Member[] = [
     theme: 'blue',
   },
   {
-    name: 'Paulo Seiji',
-    role: 'Administrador de Database',
-    image: imgPaulo,
-    instagram: 'https://www.instagram.com/psyjunior1/',
+    name: 'Bruno De Lucca',
+    role: 'Arquiteto de IOT',
+    image: imgDelucca,
+    instagram: 'https://www.instagram.com/bru_dlucca/',
     theme: 'blue',
   },
 ];
@@ -60,7 +61,7 @@ export type Technology = {
 
 export const technologies: Technology[] = [
   { icon: Code2, name: 'React & Next.js', description: 'Interfaces modernas e SSR' },
-  { icon: Network, name: 'Tailwind CSS', description: 'Estilização ágil e responsiva' },
+  { icon: Wifi, name: 'IOT', description: 'Sensores e dispositivos conectados em tempo real' },
   { icon: Cpu, name: 'Edge Computing', description: 'Processamento local de baixa latência' },
   { icon: Database, name: 'Visão Computacional', description: 'YOLO e OpenCV em Python' },
 ];
