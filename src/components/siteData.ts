@@ -1,18 +1,55 @@
 import { Code2, Cpu, Database, Network, type LucideIcon } from 'lucide-react';
 
+import imgCris from '../assets/cris.png';
+import imgDelucca from '../assets/delucca.png';
+import imgJp from '../assets/jp.png';
+import imgMarcelo from '../assets/marcelo.png';
+import imgPaulo from '../assets/paulo.png';
+
 export type Member = {
   name: string;
   role: string;
-  initials: string;
+  image: string;
+  instagram: string;
   theme: 'blue' | 'orange' | 'navy' | 'light' | 'pale';
 };
 
 export const members: Member[] = [
-  { name: 'Bruno De Lucca', role: 'Computer Vision Eng.', initials: 'BD', theme: 'blue' },
-  { name: 'Cristhian', role: 'Backend Developer', initials: 'CR', theme: 'orange' },
-  { name: 'Joao Paulo', role: 'IoT Specialist', initials: 'JP', theme: 'navy' },
-  { name: 'Marcelo', role: 'Hardware Engineer', initials: 'MA', theme: 'light' },
-  { name: 'Paulo Seiji', role: 'Data Scientist', initials: 'PS', theme: 'pale' },
+  {
+    name: 'Bruno De Lucca',
+    role: 'Arquiteto de IOT',
+    image: imgDelucca,
+    instagram: 'https://www.instagram.com/bru_dlucca/',
+    theme: 'blue',
+  },
+  {
+    name: 'Cristhian',
+    role: 'Desenvolvedor Backend',
+    image: imgCris,
+    instagram: 'https://www.instagram.com/cris.hatz/',
+    theme: 'orange',
+  },
+    {
+    name: 'Marcelo',
+    role: 'Desenvolvedor Frontend',
+    image: imgMarcelo,
+    instagram: 'https://www.instagram.com/sla_marcello/',
+    theme: 'orange',
+  },
+  {
+    name: 'Joao Paulo',
+    role: 'UX/UI Designer',
+    image: imgJp,
+    instagram: 'https://www.instagram.com/um_jotape/',
+    theme: 'blue',
+  },
+  {
+    name: 'Paulo Seiji',
+    role: 'Administrador de Database',
+    image: imgPaulo,
+    instagram: 'https://www.instagram.com/psyjunior1/',
+    theme: 'blue',
+  },
 ];
 
 export type Technology = {
